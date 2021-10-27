@@ -1,0 +1,16 @@
+#USING INHERITANCE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#USING DUCK-TYPING
