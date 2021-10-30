@@ -1,0 +1,22 @@
+CREATE TABLE students (
+    id integer PRIMARY KEY,
+    first_name character varying (50) not null,
+    middle_name character varying (50),
+    last_name character varying (50) not null,
+    age integer not null,
+    location character varying(255) not null,
+)
+
+INSERT INTO students (id, first_name, middle_name, last_name, age, location)
+
+VALUES ('1', 'Ivan', 'Ingram', 'Howard', 25, 'Bulacan')
+VALUES ('2', 'FirstName', 'MiddleName', 'LastName' 26, 'Cavite')
+VALUES ('3', 'FirstName2', 'MiddleName2', 'LastName2', 22, 'Manila')
+
+SELECT count(id) FROM students;
+
+SELECT * FROM students WHERE location = 'Manila';
+
+SELECT AVG(age) FROM students;
+
+SELECT id, first_name FROM students order by age desc;
